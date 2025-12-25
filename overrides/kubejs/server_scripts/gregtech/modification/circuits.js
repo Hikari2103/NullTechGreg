@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler(('mutated_processor_csmd'))
         .inputFluids('gtceu:germanium_solder 144')
-        .itemInputs('kubejs:mutated_processing_unit', '3x kubejs:mutatedchip_processor', 'gtceu:qbit_cpu_chip', '3x kubejs:complex_smd_capasitor', '3x kubejs:complex_smd_transistor', '16x gtceu:fine_americium_wire')
+        .itemInputs('kubejs:mutated_processing_unit', '3x kubejs:mutatedchip_processor', 'gtceu:qbit_cpu_chip', '3x kubejs:complex_smd_capacitor', '3x kubejs:complex_smd_transistor', '16x gtceu:fine_americium_wire')
         .itemOutputs('kubejs:mutated_processor')
         .duration(400)
         .EUt(150000)
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler(('mutated_processor_assembly_csmd'))
         .inputFluids('gtceu:germanium_solder 288')
-        .itemInputs('kubejs:bio_printed_circuit_board', '2x kubejs:mutated_processor', '4x kubejs:complex_smd_inductor', '6x kubejs:complex_smd_capasitor', '4x kubejs:stram_chip', '32x gtceu:fine_americium_wire')
+        .itemInputs('kubejs:bio_printed_circuit_board', '2x kubejs:mutated_processor', '4x kubejs:complex_smd_inductor', '6x kubejs:complex_smd_capacitor', '4x kubejs:stram_chip', '32x gtceu:fine_americium_wire')
         .itemOutputs('2x kubejs:mutated_processor_assembly')
         .duration(800)
         .EUt(150000)
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line(('mutated_processor_mainframe_csmd'))
         .inputFluids('gtceu:germanium_solder 2304', 'gtceu:polyetherketonetherketoneketone 1152', 'gtceu:sterilized_growth_medium 2000', 'gtceu:naquadria 5184')
-        .itemInputs('4x gtceu:neutronium_frame', '2x kubejs:uhv_containment_forge_panel', '2x kubejs:mutated_processor_computer', '16x kubejs:stram_chip', '4x kubejs:uepic_chip', '12x kubejs:complex_smd_inductor', '16x kubejs:complex_smd_capasitor', '12x kubejs:complex_smd_diode', '12x kubejs:complex_smd_resistor', '12x kubejs:complex_smd_transistor', '64x gtceu:stem_cells', '48x gtceu:fine_americium_wire', '16x gtceu:ruthenium_trinium_americium_neutronate_double_wire', 'gtceu:uv_electric_pump', '4x gtceu:neutronium_plate')
+        .itemInputs('4x gtceu:neutronium_frame', '2x kubejs:uhv_containment_forge_panel', '2x kubejs:mutated_processor_computer', '16x kubejs:stram_chip', '4x kubejs:uepic_chip', '12x kubejs:complex_smd_inductor', '16x kubejs:complex_smd_capacitor', '12x kubejs:complex_smd_diode', '12x kubejs:complex_smd_resistor', '12x kubejs:complex_smd_transistor', '64x gtceu:stem_cells', '48x gtceu:fine_americium_wire', '16x gtceu:ruthenium_trinium_americium_neutronate_double_wire', 'gtceu:uv_electric_pump', '4x gtceu:neutronium_plate')
         .itemOutputs('kubejs:mutated_processor_mainframe')
         .duration(4000)
         .EUt(1800000)
