@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
   event.create('time_machine', 'multiblock')
   .rotationState(RotationState.ALL)
   .recipeTypes('time_machine')
-  .noRecipeModifier()
+  .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
   .appearanceBlock(() => Block.getBlock('gtceu:high_power_casing'))
     .pattern(definition => FactoryBlockPattern.start()
         .aisle('             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '     BBB     ', '             ', '             ', '             ', '             ')
